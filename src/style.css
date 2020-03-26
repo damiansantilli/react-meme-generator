@@ -1,4 +1,4 @@
-/* Generated on: Wed Mar 25 2020 19:56:28 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Thu Mar 26 2020 16:24:05 GMT+0000 (Coordinated Universal Time) */
 
 
 /* ==========================================================================
@@ -2219,8 +2219,11 @@ textarea.w-select {
 }
 
 .image {
+	display: block;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	margin-left: auto;
+	text-align: right;
 }
 
 .img-meme {
@@ -2229,13 +2232,12 @@ textarea.w-select {
 }
 
 .section-2 {
-	/* position: absolute; */
+	position: static;
 	left: 0%;
 	top: auto;
 	right: 0%;
 	bottom: 0%;
-	/* margin-top: 30px; */
-	margin-top: 102px;
+	margin-top: 30px;
 	margin-bottom: 0px;
 	padding-top: 20px;
 	padding-bottom: 11px;
@@ -2270,10 +2272,7 @@ textarea.w-select {
 
 .box-img-meme-title {
 	position: relative;
-	/* margin-bottom: 28px; */
-	margin-bottom: -50px;
-	min-height: 640px;
-
+	margin-bottom: 28px;
 }
 
 .heading-2 {
@@ -2309,7 +2308,25 @@ textarea.w-select {
 	text-shadow: 1px 1px 12px #000, 1px 1px 6px #000, 4px 4px 6px #000, 1px 1px 9px #000;
 }
 
+.column {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
 @media screen and (max-width: 991px) {
+	.section-2 {
+		position: absolute;
+	}
 	.heading-2.text-top {
 		margin-top: 47px;
 	}
@@ -2320,9 +2337,12 @@ textarea.w-select {
 
 @media screen and (max-width: 767px) {
 	.heading.titulo-header {
-		text-align: center;
+		margin-top: 15px;
+		text-align: left;
 	}
 	.image {
+		position: relative;
+		top: 9px;
 		display: block;
 		margin: 0px auto 16px;
 		text-align: left;
@@ -2341,6 +2361,9 @@ textarea.w-select {
 }
 
 @media screen and (max-width: 479px) {
+	.heading.titulo-header {
+		font-size: 18px;
+	}
 	.box-img-meme-title {
 		margin-top: 50px;
 	}
@@ -2351,5 +2374,11 @@ textarea.w-select {
 	.heading-3.bottom-text {
 		margin-bottom: 14px;
 		font-size: 2em;
+	}
+	.column {
+		top: 15px;
+	}
+	.form-block {
+		margin-bottom: -30px;
 	}
 }
